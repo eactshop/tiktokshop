@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thức Ăn Mèo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img src="./img/TikTok_logo.svg.png" alt="" class="header-logo">
+    <div class="header-input">
+      <img class="header-input__kinh" src="./img/kinh.svg" alt="">
+      <input class="header-search" type="search" placeholder="Tìm kiếm">
+    </div>
+    <img src="./img/tải xuống.svg" alt="" class="header-card">
+  </div>
+  <div class="content">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item content-full__w active">
+          <img src="./img/LANGLIKE MAIN.png" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/LANGLIKE THÀNH PHẦN.png" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/LANGLIKE ĐẶC ĐIỂM.png" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/LANGLIKE CÔNG DỤNG.png" class="d-block content-img" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="content-product">
+      <div class="content-product__count">89.000đ - 379.000</div>
+      <div class="content-product__sale">
+        <div class="content-product__sale-count">499.000đ</div>
+        <div class="content-product__sale-text">Tiết kiệm tới 25%</div>
+      </div>
+      <div class="content-product__sale-flash">Flash Sale</div>
+      <div class="content-product__name">[TIPET SHOP] Thức ăn cho mèo cao cấp LangLike bao seal 5KG siêu topping không
+        độn ngũ cốc,...</div>
+      <div class="content-product__fb">
+        <div class="content-fb__number">5.0</div>
+        <img src="./img/star.svg" alt="" class="content-fb__star">
+        <div class="content-fb__star-num">(785)</div>
+        <div class="content-fb__sold">10.7K đã được bán</div>
+      </div>
+    </div>
+    <div class="content-top">
+      <img src="./img/top.svg" alt="" class="content-top__icon">
+      <div class="content-top__title">Sản phẩm hàng đầu</div>
+      <div class="content-top__des">Thức ăn thú cưng</div>
+      <img src="./img/mui ten.svg" alt="" class="content-top__icon1">
+    </div>
+
+    <div class="transport">
+      <div class="transport-title">Vận chuyển <br>
+        <div class="transport-description"><img src="./img/free ship.svg" alt="" class="transport-icon"> Miễn phí vận
+          chuyển từ 3KG</div>
+      </div>
+    </div>
+
+    <div class="policy">
+      <div class="policy-title">Chính sách đổi trả</div>
+      <div class="policy-des">Trả hàng trong vòng 7 ngày - Hoàn hàng miễn phí</div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn-buy btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Mua Ngay
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="./img/LANGLIKE MAIN.png" alt="" class="modal-header__img">
+            <div class="modal-header__count">
+              <div class="">
+                <div id="discountPrice" class="modal-header__count-title">379.000đ</div>
+                <div class="modal-header__count-sale">
+                  <div class="modal-header__count-deco" id="originalPrice">499.000đ</div>
+                  <div class="modal-header__sale25" id="discountPercent">-25%</div>
+                </div>
+              </div>
+              <div class="modal-header__kg">LangLike<div id="kg">1Kg-5Kg</div>
+              </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="myForm">
+              <input class="modal-input" type="text" id="name" name="name" placeholder="Tên + SDT" required>
+              <input class="modal-input" id="address" name="address" placeholder="Địa Chỉ" required>
+              <input class="modal-input" type="text" id="phone" name="phone" placeholder="Ghi chú (Số lượng,...)">
+
+              <div>Trọng lượng</div>
+              <div class="modal-radio">
+                <label>
+                  <input type="radio" name="product" value="1kg tặng 5 súp" data-price="100000" data-discount="89000"
+                    data-kg="1KG tặng 5 súp" required>
+                  1kg tặng 5 súp
+                </label>
+                <label>
+                  <input type="radio" name="product" value="3kg tặng 10 súp" data-price="299000" data-discount="259000"
+                    data-kg="3KG tặng 10 súp">
+                  3kg tặng 10 súp
+                </label>
+                <label>
+                  <input type="radio" name="product" value="5kg tặng 20 súp" data-price="499000" data-discount="379000"
+                    data-kg="5KG tặng 15 súp">
+                  5kg tặng 20 súp
+                </label>
+              </div>
+              <button class="btn-buy__modal" type="submit">Mua</button>
+              <div class="alert-suc">Đặt hàng thành công!</div>
+              <script>
+                function showSuccess() {
+                  let alertBox = document.querySelector(".alert-suc");
+                  alertBox.style.display = "block";
+
+                  // Ẩn sau 3 giây
+                  setTimeout(() => {
+                    alertBox.style.display = "none";
+                  }, 3000);
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="feedback">
+      <h2 class="feedback-title">Đánh giá của khách hàng (785)</h2>
+      <div class="feedback-description">
+        <div class="feedback-description__1">
+          <div class="feedback-description__user">
+            <img src="./img/anh gai 1.jpg" alt="" class="feedback-description__img">
+          </div>
+          <div class="fb-des__1-title">L**h V**g <br><b class="fb-des__1-oder">Mặt hàng: Thức ăn mèo LangLike 5KG + 20
+              súp thưởng</b></div>
+          <div class="fb-des__1-stars">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+          </div>
+        </div>
+        <div class="padding-l50">
+          <div class="fb-des__content">Thức ăn mèo Langlike rất thơm, hạt vừa ăn, bé nhà mình thích lắm. Được tặng kèm
+            súp thưởng nữa, mèo mê tít! Sẽ ủng hộ tiếp. 🐱✨</div>
+          <img src="./img/fb1.jpg" alt="" class="fb-des__img">
+          <div class="fb-des__date" id="currentDate"></div>
+        </div>
+
+      </div>
+
+      <div class="feedback-description">
+        <div class="feedback-description__1">
+          <div class="feedback-description__user">
+            <img src="./img/trai 4.jpg" alt="" class="feedback-description__img">
+          </div>
+          <div class="fb-des__1-title">T**n A** <br><b class="fb-des__1-oder">Mặt hàng: Thức ăn mèo LangLike 10KG + 20
+              súp thưởng</b></div>
+          <div class="fb-des__1-stars">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+          </div>
+        </div>
+        <div class="padding-l50">
+          <div class="fb-des__content">Mèo nhà mình kén ăn mà lại mê Langlike, hạt thơm giòn, súp thưởng cũng ngon. Quá
+            ưng!</div>
+          <img src="./img/fb2.jpg" alt="" class="fb-des__img">
+          <div class="fb-des__date currentDate" id="currentDate_1"></div>
+        </div>
+
+      </div>
+
+      <div class="feedback-description">
+        <div class="feedback-description__1">
+          <div class="feedback-description__user">
+            <img src="./img/trai 5.jpg" alt="" class="feedback-description__img">
+          </div>
+          <div class="fb-des__1-title">Q**c Đ*m <br><b class="fb-des__1-oder">Mặt hàng: Thức ăn mèo LangLike 3KG + 10
+              súp thưởng</b></div>
+          <div class="fb-des__1-stars">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+          </div>
+        </div>
+        <div class="padding-l50">
+          <div class="fb-des__content">Mua lần thứ 3 rùi mấy bé nhà mình ăn rất tốt, lông óng mượt lại được tặng thêm
+            súp nữa quá
+            trời ưng. Sẽ tiếp tục ủng hộ shop ạ.
+          </div>
+          <img src="./img/fb3.webp" alt="" class="fb-des__img">
+          <div class="fb-des__date" id="currentDate_2"></div>
+        </div>
+
+      </div>
+
+      <div class="feedback-description">
+        <div class="feedback-description__1">
+          <div class="feedback-description__user">
+            <img src="./img/meo 3.jpg" alt="" class="feedback-description__img">
+          </div>
+          <div class="fb-des__1-title">Ph**g T**n<br><b class="fb-des__1-oder">Mặt hàng: Thức ăn mèo LangLike 5KG + 20
+              súp thưởng</b></div>
+          <div class="fb-des__1-stars">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+          </div>
+        </div>
+        <div class="padding-l50">
+          <div class="fb-des__content">Giao hàng nhanh, hàng đúng mô tả. Súp tặng kèm ngon, rất hài lòng! 💯
+          </div>
+          <img src="./img/fb4.webp" alt="" class="fb-des__img">
+          <div class="fb-des__date" id="currentDate_3"></div>
+        </div>
+
+      </div>
+
+      <div class="feedback-description">
+        <div class="feedback-description__1">
+          <div class="feedback-description__user">
+            <img src="./img/anh gai 2.jpg" alt="" class="feedback-description__img">
+          </div>
+          <div class="fb-des__1-title">V* H**ng<br><b class="fb-des__1-oder">Mặt hàng: Thức ăn mèo LangLike 5KG + 20
+              súp thưởng</b></div>
+          <div class="fb-des__1-stars">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            <img src="./img/star.svg" alt="" class="fb-des__1-star">
+          </div>
+        </div>
+        <div class="padding-l50">
+          <div class="fb-des__content">Hạt thơm, ngon, mèo không chê. Súp thưởng bé thích lắm, lần sau chắc phải mua
+            thêm.</div>
+          <img src="./img/fb5.webp" alt="" class="fb-des__img">
+          <div class="fb-des__date" id="currentDate_4"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="line1"></div>
+    <div class="store-info">
+      <img src="./img/logo.png" alt="" class="store-info__img">
+      <div class="store-info__text">
+        <div class="store-info__name">TIPET SHOP</div>
+        <div class="store-info__product">156 mặt hàng</div>
+      </div>
+      <a href="https://vt.tiktok.com/ZSrk4G5j1/" class="store-link">Cửa Hàng</a>
+    </div>
+    <div class="line1"></div>
+    <div class="des-product">
+      <div class="des-product__title">Mô tả sản phẩm</div>
+      <div class="des-product__des">
+        Hạt thức ăn cho mèo LangLike là sản phẩm cao cấp được thiết kế để đáp ứng nhu cầu dinh dưỡng của mèo ở mọi lứa
+        tuổi. Với công thức không chứa ngũ cốc, sản phẩm này phù hợp cho cả những chú mèo có hệ tiêu hóa nhạy cảm. <br>
+        Thành phần chính: <br>
+        • Hàm lượng protein cao: LangLike chứa 40% protein chất lượng cao, hỗ trợ sự phát triển cơ bắp và duy trì năng
+        lượng cho mèo <br>
+        • Thịt sấy khô: Sản phẩm được bổ sung thịt sấy khô siêu topping, kích thích vị giác và tăng cường giá trị dinh
+        dưỡng. <br>
+        • Không chứa ngũ cốc: Công thức không độn ngũ cốc giúp giảm nguy cơ dị ứng và hỗ trợ tiêu hóa tốt hơn cho mèo. <br>
+        Lợi ích nổi bật: <br>
+        • Hỗ trợ tiêu hóa: Thành phần dễ tiêu hóa giúp cải thiện chức năng đường ruột và hấp thu dưỡng chất hiệu quả. <br>
+        • Da và lông khỏe mạnh: Cung cấp các axit béo thiết yếu, vitamin và khoáng chất giúp da khỏe mạnh và lông bóng
+        mượt. <br>
+        • Tăng cường hệ miễn dịch: Sự kết hợp của các chất chống oxy hóa, vitamin và khoáng chất giúp nâng cao sức đề
+        kháng cho mèo. <br>
+        Hướng dẫn sử dụng: <br>
+        Cho mèo ăn theo khẩu phần khuyến nghị dựa trên trọng lượng và mức độ hoạt động của chúng. Đảm bảo luôn có nước
+        sạch để mèo uống kèm. <br>
+        Hạt thức ăn cho mèo LangLike là lựa chọn lý tưởng cho những ai muốn cung cấp cho thú cưng của mình một chế độ ăn
+        uống cân bằng, giàu dinh dưỡng và ngon miệng.
+      </div>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
