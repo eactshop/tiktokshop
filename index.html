@@ -14,7 +14,8 @@
     <link class="iconweb" rel="icon" type="image/png" href="img/logo.png">
     <meta property="og:title" content="MUA NGAY ĐỂ NHẬN SIÊU ƯU ĐÃI THÁNG 4">
     <meta property="og:description" content="Mua hạt tặng kèm súp thưởng siêu hời giá chỉ từ 89K FREE SHIP">
-    <meta property="og:image" content="img/LANGLIKE MAIN.png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <meta property="og:image" content="./img/LANGLIKE MAIN.png">
 </head>
 
 <body>
@@ -134,19 +135,8 @@
                   5kg tặng 20 súp
                 </label>
               </div>
-              <button class="btn-buy__modal" type="submit">Mua</button>
+              <button class="btn-buy__modal" onclick="sendEmail()" type="submit">Mua</button>
               <div class="alert-suc">Đặt hàng thành công!</div>
-              <script>
-                function showSuccess() {
-                  let alertBox = document.querySelector(".alert-suc");
-                  alertBox.style.display = "block";
-
-                  // Ẩn sau 3 giây
-                  setTimeout(() => {
-                    alertBox.style.display = "none";
-                  }, 3000);
-                }
-              </script>
             </form>
           </div>
         </div>
@@ -294,7 +284,7 @@
       <div class="des-product__des">
         Hạt thức ăn cho mèo LangLike là sản phẩm cao cấp được thiết kế để đáp ứng nhu cầu dinh dưỡng của mèo ở mọi lứa
         tuổi. Với công thức không chứa ngũ cốc, sản phẩm này phù hợp cho cả những chú mèo có hệ tiêu hóa nhạy cảm. <br>
-        <video class="video" width="600" autoplay loop controls>
+        <video class="video" width="600" autoplay controls>
           <source src="./img/meo an.mp4" type="video/mp4">
           Trình duyệt của bạn không hỗ trợ video.
       </video>
